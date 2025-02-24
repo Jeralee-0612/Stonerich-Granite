@@ -638,60 +638,77 @@
     </section><!-- /Team Section -->
 
  <!-- Contact Start -->
- <div class="container-xxl py-5" id="contactus-section">
+<div class="container-xxl py-5" id="contactus-section">
   <div class="container">
-      <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-          <h6 class="text-secondary text-uppercase">// Contact Us //</h6>
-          <h1 class="mb-5">Visit Our Shop & Contact Us</h1>
+    <div class="text-center wow fadeInUp section-title" data-wow-delay="0.1s">
+      <h2 class="mb-5">Contact Us</h2>
+    </div>
+    <div class="row g-4 align-items-center">
+
+      <!-- Google Map Embed with Pinned Location -->
+      <div class="col-lg-6 col-md-12 text-center wow fadeIn" data-wow-delay="0.1s">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.7362852938645!2d121.05850757497663!3d14.727496085774035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b061467e6bad%3A0xef83a0a26c190651!2sExpress%20Pay!5e0!3m2!1sen!2sph!4v1740385700830!5m2!1sen!2sph" 
+          width="100%" height="350" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <br>
+        <small>
+          <a href="https://www.google.com/maps/place/Stonerich-Granite/@14.7053854,121.0762182,17z/data=!3m1!4b1!4m6!3m5!1s0x3397b1a127cdc1ab:0xef2c84b4f953cee2!8m2!3d14.7053854!4d121.0762182!16s%2Fg%2F11t3z8d1j1"
+            target="_blank">
+            View on Google Maps
+          </a>
+        </small>
       </div>
-      <div class="row g-4">
 
-          <!-- Google Map Embed with Pinned Location -->
-          <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
-              <iframe class="position-relative rounded w-100 h-100"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.127420660021!2d121.0762182!3d14.7053854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b1a127cdc1ab%3A0xef2c84b4f953cee2!2si-RepairGadgetz!5e0!3m2!1sen!2sph!4v1739707145323!5m2!1sen!2sph"
-                  frameborder="0" style="min-height: 350px; border:0;" allowfullscreen loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"></iframe>
-              <br>
-              <small>
-                  <a href="https://www.google.com/maps/place/i-RepairGadgetz/@14.7053854,121.0762182,17z/data=!3m1!4b1!4m6!3m5!1s0x3397b1a127cdc1ab:0xef2c84b4f953cee2!8m2!3d14.7053854!4d121.0762182!16s%2Fg%2F11t3z8d1j1"
-                      target="_blank">
-                      View on Google Maps
-                  </a>
-              </small>
-          </div>
-
-
-          <!-- Quick Contact Buttons -->
-          <div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
-              <p class="mb-3 text-center">Contact us instantly through Facebook or Email.</p>
-              <a href="https://www.facebook.com/iRepairGadgetz2022" target="_blank"
-                  class="btn btn-primary w-75 mb-2">
-                  <i class="fab fa-facebook-messenger me-2"></i> Message on Facebook
-              </a>
-              <a id="email-link" class="btn btn-danger w-75">
-                  <i class="fa fa-envelope me-2"></i> Send an Email
-              </a>
-
-              <script>
-                  document.getElementById("email-link").addEventListener("click", function (event) {
-                      event.preventDefault(); // Prevent default behavior
-
-                      if (navigator.userAgent.match(/Android|iPhone|iPad|iPod/i)) {
-                          // Mobile: Open email app (Gmail, Outlook, etc.)
-                          window.location.href = "mailto:IRepairGadgetz2022@gmail.com?subject=Inquiry";
-                      } else {
-                          // Desktop: Open Gmail in a new tab
-                          window.open("https://mail.google.com/mail/?view=cm&fs=1&to=IRepairGadgetz2022@gmail.com&su=Inquiry", "_blank");
-                      }
-                  });
-              </script>
-
-          </div>
+      <!-- Quick Contact Buttons -->
+      <div class="col-lg-6 col-md-12 d-flex flex-column align-items-center text-center wow fadeIn" data-wow-delay="0.2s">
+        <p class="mb-3">Contact us instantly through Facebook or Email.</p>
+        <a href="https://www.facebook.com/profile.php?id=100089207118272" target="_blank"
+          class="btn btn-primary w-100 mb-2">
+          <i class="fab fa-facebook-messenger me-2"></i> Message on Facebook
+        </a>
+        <a id="email-link" class="btn btn-danger w-100">
+          <i class="fa fa-envelope me-2"></i> Send an Email
+        </a>
       </div>
+
+    </div>
   </div>
 </div>
 <!-- Contact End -->
+
+<script>
+  document.getElementById("email-link").addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent default behavior
+
+    if (navigator.userAgent.match(/Android|iPhone|iPad|iPod/i)) {
+      // Mobile: Open email app (Gmail, Outlook, etc.)
+      window.location.href = "mailto:mjeralee12@gmail.com?subject=Inquiry";
+    } else {
+      // Desktop: Open Gmail in a new tab
+      window.open("https://mail.google.com/mail/?view=cm&fs=1&to=mjeralee12@gmail.com&su=Inquiry", "_blank");
+    }
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      document.querySelector('a[href="#contactus-section"]').addEventListener("click", function (event) {
+          event.preventDefault(); // Iwasan ang default jump ng browser
+
+          // Kunin ang Contact Us section
+          var contactSection = document.getElementById("contactus-section");
+
+          // Gamitin ang scrollIntoView para sa smooth scrolling at centering
+          contactSection.scrollIntoView({
+              behavior: "smooth",
+              block: "center"
+          });
+      });
+  });
+</script>
+
 
 
 <script>
