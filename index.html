@@ -26,6 +26,13 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  
+  <!-- Preload background image -->
+<link rel="preload" as="image" href="assets/img/bg.webp" type="image/webp">
+
+<!-- Preload font (update the href path to your actual font file) -->
+<link rel="preload" href="/fonts/your-font.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
 
   <!-- =======================================================
   * Template Name: Day
@@ -100,22 +107,23 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
+<!-- Hero Section -->
+<section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/bg.webp" alt="" data-aos="fade-in">
+  <img src="assets/img/bg.webp" alt="Granite background" class="hero-bg">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row justify-content-start">
-          <div class="col-lg-8">
-            <h2>Stonerich Granite</h2>
-            <p>Your trusted source for high-quality granite, marble, and quartz surfaces</p>
-            <a href="#about" class="btn-get-started">Get Started</a>
-          </div>
-        </div>
+  <div class="container">
+    <div class="row justify-content-start">
+      <div class="col-lg-8">
+        <h2>Stonerich Granite</h2>
+        <p>Your trusted source for high-quality granite, marble, and quartz surfaces</p>
+        <a href="#about" class="btn-get-started">Get Started</a>
       </div>
+    </div>
+  </div>
 
-    </section><!-- /Hero Section -->
+</section>
+<!-- /Hero Section -->
 
     <!-- About Section -->
     <section id="about" class="about section">
